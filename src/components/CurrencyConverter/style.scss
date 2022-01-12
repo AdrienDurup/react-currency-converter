@@ -1,0 +1,68 @@
+@use './vars';
+
+.converter {
+  font-family: "Spartan", sans-serif;
+  // display: flex;
+  // flex-direction: column;
+  --base: 1rem;
+  // height: calc(100% - 2*var(--base));
+  height: 100%;
+  background-color:vars.$main-bg;
+  padding: vars.$base-padding;
+
+  &__input {
+    background-color: unset;
+    border: none;
+    flex-basis: 50%;
+    // margin-top: 1rem;
+  }
+
+  &__amount {
+    text-align: right;
+  }
+
+  &__title {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    flex-basis: 100%;
+  }
+
+  &__header {
+    background-color: vars.$main-dark;
+    height: vars.$header-height;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+}
+
+@media screen and (max-width:499px) {
+  .converter {
+    padding: 0;
+    width: 100%;
+
+    & input {
+      display: block;
+      text-align: center;
+      background-color: white;
+    }
+
+    &__amount {
+      text-align: center;
+    }
+
+  }
+
+  .app {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .converter {
+    & input {
+      flex-basis: 100%;
+    }
+  }
+}

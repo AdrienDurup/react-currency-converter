@@ -1,0 +1,7 @@
+$main-bg: rgb(101, 131, 206);
+$main-light:rgb(117, 197, 221);
+$main-dark:rgb(17, 124, 157);
+$base-padding:1rem;
+$header-height:5rem;
+$footer-height:12rem;
+$list-height:calc(100vh - ($base-padding * 2) - $header-height - $footer-height);

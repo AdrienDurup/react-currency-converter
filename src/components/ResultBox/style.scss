@@ -1,0 +1,19 @@
+@use '../CurrencyConverter/vars';
+
+.result-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height:vars.$footer-height;
+  text-align: center;
+}
+.result__rate{
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+}
+.result__name{
+  font-size:1rem;
+  color: white;
+}

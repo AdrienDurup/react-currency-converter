@@ -1,0 +1,53 @@
+@use '../CurrencyConverter/vars';
+
+.list-container {
+  overflow-y: scroll;
+max-height:vars.$list-height;
+}
+.currency-list {
+  &__item {
+    padding: 1rem 0.5rem;
+    text-align: left;
+    border-bottom: solid 1px vars.$main-light;
+    background-color: white;
+    transition: 250ms ease;
+
+    &.is-title {
+      font-weight: 700;
+    }
+
+    &.has-filter {
+      padding: .5rem;
+      display: flex;
+      justify-content: stretch;
+    }
+    &.--is-active-item{
+      background-color: vars.$main-dark;
+      color: white;
+    }
+  }
+
+  &__item:hover {
+    background-color:vars.$main-dark;
+    color: white;
+    transition: 100ms ease;
+  }
+
+  &__rate {
+    padding: .3rem;
+    border-radius: .3rem;
+    background-color: vars.$main-dark;
+    color: white;
+  }
+
+  &__filter {
+    border: none;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    height: 2rem;
+    margin: 0;
+    font-family: "Spartan", sans-serif;
+  }
+
+}
